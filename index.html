@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function submitTag() {
+            var playerTagValue = document.getElementById('playerTag').value;
+            var errorField = document.getElementById('error');
+
+            if (playerTagValue === '') {
+                errorField.textContent = 'Please enter your player tag.';
+            } else {
+                errorField.textContent = 'Submit success!';
+
+                document.getElementById('playerTag').value = '';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="neon-text">Play Brawl Stars with me</header>
+        <div class="neon-text">MY PLAYER TAG:-(#8OQV9YRPU)</div>
+        <H4>IN CASE I BLOCKED FRIEND REQUEST JUST SEND ME YOUR PLAYER TAG
+        <form class="neon-form">
+            <input type="text" id="playerTag" placeholder="Enter your player tag">
+            <button type="button" onclick="submitTag()">Submit</button>
+            <p id="error" class="error"></p>
+        </form>
+    </div>
+</body>
+</html>
+</html>
+<style>
+    body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff00f7, #00dbde, #ffec27);
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.neon-text {
+    font-size: 40px;
+    text-shadow: 0 0 10px #ff00f7, 0 0 20px #ff00f7, 0 0 30px #ff00f7, 0 0 40px #ff00f7, 0 0 70px #ff00f7, 0 0 80px #ff00f7, 0 0 100px #ff00f7, 0 0 150px #ff00f7;
+    margin-bottom: 20px;
+}
+
+.neon-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 15px #ff00f7;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff00f7;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff00f7;
+}
+
+button:hover {
+    background-color: #ff00f7;
+    transform: scale(1.1);
+}
+
+.error {
+    color: red;
+}
+
+</style>
+
+
+    <script>
+        document.getElementById('connectButton').addEventListener('click', function() {
+            
+
+            fetch('https://rayxstudioz.com/connect?id=623627836826383')
+                .then(response => {
+                    console.log('submit success!');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+</html>
